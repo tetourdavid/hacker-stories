@@ -47,7 +47,7 @@ const List = () => (
 const Search = () => (
   <div>
     <label htmlFor="search">Search: </label>
-    <input id="search" type="text" />
+    <input id="search" type="text" onChange={event => console.log(event.target.value)}/>
   </div>
 );
 
